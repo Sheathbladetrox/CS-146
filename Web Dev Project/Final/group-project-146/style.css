@@ -1,0 +1,297 @@
+body {
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	font-family: "Trade Gothic W01",Arial,Helvetica,sans-serif;
+}
+a {
+	color: #A32638;
+}
+a:visited{
+	color: #7A548B;
+}
+#header{
+	width: 100%;
+	height: auto;
+	background-color: white;
+	border-bottom-style: solid;
+	border-color:#E4E5E6;
+	border-width: 2px;
+	font-size: 20pt;
+}
+nav {
+	width: 98%;
+	height: 100%;
+	display: flex;
+	padding-right: 10px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	font-weight: bold;
+}
+nav img {
+	width: auto;
+	height: 100px;
+	display: block;
+	margin-left: 2%; 
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+nav ul {
+	list-style-type: none;
+    margin-left: 10px;
+    padding: 0;
+    width: auto;
+    height: 100%;
+    background-color: white;
+    color: black;
+    display: inline-flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav ul li {
+    padding: 4px;
+    border-width: 2px;
+    border-radius: 5px;
+   	margin-left: 5px;
+}
+nav ul li a {
+	align-self: flex-start;
+	display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+nav ul li a:visited {
+	color: black;
+}
+/*
+nav ul li:hover{
+	background-color: #A32638;
+	color: white;
+}
+*/
+.nav-highlight{
+	background-color: #A32638;
+	color: white;
+}
+#sidebar{
+	width: 25%;
+	min-height: 85%;
+	background-color: yellow;
+}
+#content{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.section {
+	border-color: #9A989A;
+	border-style: solid;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 5px;
+	width: 95%;
+	max-width: 900px;
+	background-color: #E4E5E6;
+}
+.section ul {
+	list-style-type: square;
+}
+
+
+
+h1, h2{
+	color: #A32638;
+}
+
+.section .section {
+	border-color: #a32639;
+	background-color: white;
+	margin: auto;
+}
+.fake-inner{
+	border-style: solid;
+	border-radius: 5px;
+	border-color: #a32639;
+	background-color: white;
+	max-width: 900px;
+	padding: 5px;
+	margin: auto;
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height:150px;
+}
+
+
+#footer{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-self: flex-end;
+	background-color: #A32638;
+	color: white;
+}
+
+
+#wrapper{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Form and Picture Alignment */
+form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.row-item{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	flex-basis: auto;
+}
+.row-item .section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.image-flex {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.row-item > div {
+	flex-grow: 1;
+}
+.row-item .section{
+	height: 100%;
+}
+.width-25 {
+	width: 25%;
+}
+.width-75{
+	width: 75%;
+}
+.width-50{
+	width: 50%;
+	margin: 5px;
+}
+.width-46 {
+	width: 46%;
+
+}
+.small-logo{
+	max-height: 150px;
+	height: auto;
+	width: auto;
+	max-width: 100%
+}
+.inline {
+	display: inline;
+}
+input, textarea, select {
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	transition-duration: 0.3s;
+}
+select, textarea{
+	border-width: 2px;
+	border-radius: 3px;
+	border-color: #E4E5E6;
+}
+input:not([type=submit]):not([type=file]){
+	border-width: 0 0 3px 0;
+	border-color: #E4E5E6;
+}
+input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus{
+	border-color: #A32638;
+}
+
+input[type=submit]{
+	border-color: #E4E5E6;
+	border-width: 2px;
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	height: 32px;
+	transition-duration: 0.3s;
+}
+input[type=submit]:hover{
+	background-color: #A32638;
+	border-color: black;
+	color: white;
+}
+input[type=submit]:active{
+	background-color: #363D45;
+}
+
+/* Remove spinner on number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+/* Vertical menu */
+
+@media screen and (max-width: 700px){
+	nav{
+		flex-direction: column;
+	}
+	nav img{
+		margin-left: 0;
+	}
+	nav ul{
+		flex-direction: column;
+	}
+  .row-item, .picture-grid{
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+	.width-25, .width-75 {
+		width: 100%;
+	}
+	.width-50, .width-48{
+		width: 90%;
+	}
+}
+
+.nodec{
+	text-decoration: none;
+	color: inherit;
+}
+.nodec:visited{
+	text-decoration: none;
+	color: inherit;
+}
+.nodec:active{
+	text-decoration: none;
+	color: inherit;
+}
+/* Made this specifically for the scheduling page. */
+.fill-width{
+	width: 100%;
+}
+.schedules .fake-inner {
+	height: auto;
+}
+.centered{
+	text-align: center;
+}
