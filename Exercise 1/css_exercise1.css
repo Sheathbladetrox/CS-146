@@ -1,0 +1,47 @@
+﻿header {
+    padding: 0px 0px 0px 15px;
+    background-color: blue;
+}
+
+h1 {
+    font-weight: bold;
+    color: white;
+}
+
+h3{
+    font-weight: bold;
+    color: white;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+header p{
+    font-style: italic;
+    color: white;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+    font-style: normal;
+}
+
+section{
+    background-color: lightskyblue;
+    margin: 16px auto;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+em{
+    color: lightseagreen;
+    background-color: lightblue;
+}
+
+li{
+    float: left;
+}

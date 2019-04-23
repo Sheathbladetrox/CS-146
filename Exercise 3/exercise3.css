@@ -1,0 +1,30 @@
+/* The link on the logo */
+nav .logo a {
+    
+}
+
+/* The navigation links on the right */
+nav .nav-links a {
+
+}
+
+/* List that holds the link containers */
+nav ul {
+
+}
+
+/* List items that hold the links */
+nav li {
+
+}
+
+/* The logo container */
+nav .logo {
+
+}
+
+/* The navbar itself */
+nav {
+  display: flex;
+  
+}

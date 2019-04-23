@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navbar - demo</title>
+    <link rel="stylesheet" type="text/css" href="exercise3.css"> 
+    <style type="text/css">
+      /* Reset CSS, fixes margins and padding on different browsers */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* This is the big 'ol logo on the left side */
+      nav .logo a {
+        color: #fff;
+        font-size: 25px;
+        /* Give it some space on the left */
+        margin-left: 10px;
+        text-decoration: none;
+      }
+
+      /* These are the fancy clickable links on the left */
+      nav .nav-links a {
+        /* Picked this color from https://material.io/color */
+        background-color: #ffa000;
+
+        /* Need to show no shadows before animating them in! */
+        box-shadow: 0 0 0 transparent;
+
+        /* Set font color to white */
+        color: #fff;
+        /* Give us some padding between word and bounds */
+        padding: 0 8px;
+
+        /* Remove those silly underlines! */
+        text-decoration: none;
+
+        /* Allow us to animate any properties! */
+        transition: all 0.2s ease-out;
+      }
+
+      nav .nav-links a:hover {
+        /* New, lighter background color */
+        background-color: #ffc107;
+
+        /* Just a touch of shadow */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+        /* Make it pop out! This doesn't move neighboring elements */
+        transform: scale(1.1, 1.1);
+      }
+
+      /* This holds our list of nav links */
+      .nav-links {
+        /* Give it some space on the right */
+        margin-right: 10px;
+      }
+
+      /* This contains each nav link a tag */
+      nav li {
+        /* Each nav link will take up the entire nav height */
+        height: 48px;
+      }
+
+      /* The list of nav links */
+      nav ul {
+        /* The nav list shouldn't look like a list! */
+        list-style: none;
+      }
+
+      /* The entire navbar itself */
+      nav {
+        background-color: #ffa000;
+        height: 48px;
+
+        /*
+        There are a few ways of making the navbar stick to the top.
+
+        An easy way to do this is: 
+          position: fixed;
+          top: 0;
+
+        Unfortunately, this makes it so elements are hidden under it :(
+
+        A better way to do this that keeps elements from hiding is: 
+          position: sticky;
+          top: 0;
+
+        This allows the navbar to stay static when the page starts moving
+
+        The final way to make a navbar stay on the top is a little bit of a cheat!
+        You make a really big div underneath it and take up the rest of the screen.
+        When this div starts scrolling (overflow-y: auto), the nav will stay nicely
+          on top of it!
+
+        If you do make your navbar stick to the top, I recommend adding a nice shadow :)
+        Here's one that looks reeaall good:
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        */
+      }
+
+      body {
+        background-color: #eee;
+      }
+
+      .content {
+        background-color: #fff;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+        margin: 20px auto;
+        padding: 16px;
+        width: 800px;
+      }
+
+      .content ul {
+        margin: 10px 20px;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      pre {
+        /* Designed to look like a 100% real hacker's terminal */
+        background-color: #000;
+        color: #5e5;
+        padding: 8px;
+
+        /* Get those cool glowing screen vibe */
+        box-shadow: 0 0 10px #5e5 inset;
+        text-shadow: 0 0 2px #5e5;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">Generik</a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Merch</a></li>
+          <li><a href="#">Contribute</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--
+      This div will always be larger than the screen.
+      Uncomment it if you want to practice making your nav stay on top!
+    -->
+    <div class="content">
+      <p>
+        Hello! Check out this wicked navbar! Unfortunately, it's missing some layout CSS! Please write your code in a <code>style.css</code> file!
+      </p>
+      <p>
+        You only need these four <u>CSS Properties</u> to complete the navbar!
+      </p>
+      <ul>
+        <li><code>align-items</code></li>
+        <li><code>display</code></li>
+        <li><code>flex</code></li>
+        <li><code>justify-content</code></li>
+      </ul>
+      <p>
+        All of the <u>CSS Selectors</u> needed for completing the navbar are here:
+      </p>
+      <pre>/* The link on the logo */
+nav .logo a {
+
+}
+
+/* The navigation links on the right */
+nav .nav-links a {
+
+}
+
+/* List that holds the link containers */
+nav ul {
+
+}
+
+/* List items that hold the links */
+nav li {
+
+}
+
+/* The logo container */
+nav .logo {
+
+}
+
+/* The navbar itself */
+nav {
+  display: flex;
+}</pre>
+      <p>
+        When the navbar is complete, the logo will be on the left and the links will be on the right. When you hover over the links, they should pop!
+      </p>
+    </div>
+  </body>
+</html>

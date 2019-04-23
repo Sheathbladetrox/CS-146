@@ -1,0 +1,61 @@
+li.underline{
+    text-decoration: underline;
+}
+
+li.no-underline a{
+    text-decoration: none;
+}
+
+li.uppercase{
+    text-transform: uppercase;
+}
+
+li.cleartext{
+    color: white;
+}
+
+li.cleartext.bg-black{
+    background-color: black;
+    color: black;
+    list-style: none;
+}
+
+li.cleartext.bg-red{
+    background-color: red;
+    color: red;
+    list-style: none;
+}
+
+li.fg-white.bg-black{
+    background-color: black;
+    color: white;
+    list-style: none;
+}
+
+li.fg-purple.bg-red{
+    background-color: red;
+    color: purple;
+    list-style: none;
+}
+
+li.shadow{
+    text-shadow: 1px 1px 1px red;
+}
+
+li.round{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+li.borders{
+    padding: 2px;
+    border: 3px solid black;
+}
+
+li.bold span:first-child{
+    font-weight: bold;  
+}
+
+li.code{
+    font-family: monospace;
+}
